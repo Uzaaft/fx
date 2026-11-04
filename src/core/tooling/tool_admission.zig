@@ -988,6 +988,7 @@ fn traceOrigin(review_turn: ?permission_auto_classifier.ReviewTurnContext) diagn
     return switch (turn.origin) {
         .root => .root,
         .subagent => .subagent,
+        .code_mode => .code_mode,
     };
 }
 
